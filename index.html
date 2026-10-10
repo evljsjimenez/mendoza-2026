@@ -4,10 +4,12 @@
 :root{--malbec:#5b1a3a;--malbec2:#7d2752;--terra:#c8643b;--andes:#2f5d8a;--sand:#fbf3ea;--ink:#2b1a22}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--sand);color:var(--ink);line-height:1.5}
 a{color:var(--malbec2)}
-.hero{position:relative;min-height:92vh;color:#fff;text-align:center;padding:56px 20px 160px;background:linear-gradient(180deg,#2f5d8a 0%,#7d2752 55%,#c8643b 100%);overflow:hidden}
+.hero{position:relative;min-height:92vh;color:#fff;text-align:center;padding:56px 20px 160px;background:linear-gradient(180deg,rgba(20,10,16,.64) 0%,rgba(91,26,58,.46) 42%,rgba(91,26,58,.3) 70%,rgba(43,26,34,.42) 94%,#fbf3ea 100%),url("assets/hero.jpg") center 38%/cover no-repeat;overflow:hidden}
+@media (max-width:700px){.hero{background:linear-gradient(180deg,rgba(20,10,16,.74) 0%,rgba(91,26,58,.56) 46%,rgba(91,26,58,.36) 72%,rgba(43,26,34,.48) 94%,#fbf3ea 100%),url("assets/hero-mobile.jpg") center 34%/cover no-repeat}}
 .hero h1{font-size:clamp(2.6rem,12vw,5rem);margin:.2em 0 0;letter-spacing:-1px;text-shadow:0 4px 20px #0005}
 .hero p{font-size:1.1rem;opacity:.95;margin:.3em 0}
-.hero svg{position:absolute;left:0;bottom:0;width:100%;height:200px}
+.hero p.credit{position:absolute;left:50%;bottom:42px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 24px);margin:0;padding:3px 10px;border-radius:99px;background:#2b1a2288;font-size:.72rem;line-height:1.35;opacity:.95;text-shadow:0 1px 2px #000a}
+.hero p.credit a{color:#fff}
 .cd{display:flex;justify-content:center;gap:10px;margin:28px 0 8px;flex-wrap:wrap}
 .cd div{background:#ffffff22;backdrop-filter:blur(6px);border:1px solid #fff4;border-radius:16px;padding:10px 12px;min-width:70px}
 .cd b{display:block;font-size:2rem}.cd small{font-size:.75rem;text-transform:uppercase;letter-spacing:1px}
@@ -41,12 +43,7 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <div><span class="chip">JS</span><span class="chip">Esposa ❤️</span><span class="chip">Carmem</span><span class="chip">Wilson</span></div>
 <div class="cd" id="cd"><div><b id="d">–</b><small>dias</small></div><div><b id="h">–</b><small>horas</small></div><div><b id="m">–</b><small>min</small></div><div><b id="s">–</b><small>seg</small></div></div>
 <p class="note" id="cdmsg" style="color:#fff">até a decolagem em GRU (21/10, 12:15 BRT)</p>
-<svg viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
-<path d="M0 200 L0 120 L120 60 L200 100 L330 20 L420 90 L520 40 L640 110 L760 30 L880 95 L1000 50 L1100 100 L1200 70 L1200 200Z" fill="#2b3f5f" opacity=".7"/>
-<path d="M330 20 L360 45 L340 42 L320 48Z M760 30 L790 55 L765 50 L742 56Z" fill="#fff"/>
-<path d="M0 200 L0 150 Q300 120 600 150 T1200 140 L1200 200Z" fill="#5b1a3a"/>
-<g stroke="#8fae5a" stroke-width="4" opacity=".8"><path d="M0 175 Q600 150 1200 172"/><path d="M0 190 Q600 168 1200 188"/></g>
-<path d="M0 200 L0 185 Q600 175 1200 190 L1200 200Z" fill="#fbf3ea"/></svg>
+<p class="credit">Foto: <a href="https://commons.wikimedia.org/wiki/File:Vineyard_in_Mendoza,_Argentina.jpg">David</a> · vinhedo no Vale do Uco, Mendoza · redimensionada · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
 </header>
 <main>
 
