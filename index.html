@@ -49,6 +49,9 @@ a.mealbadge{display:inline-block;margin:8px 6px 0 0;padding:3px 10px;border-radi
 .av.js{background:#5b1a3a}.av.ana{background:#c8643b}.av.carmen{background:#2f5d8a}.av.wilson{background:#2b1a22}
 #syncnote.warn{opacity:1;color:#8a3b1e}
 #onde-comer h3,#onde-comer-21-jantar,#onde-comer-25-almoco,#onde-comer-25-jantar{scroll-margin-top:12px}
+.sitenav{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
+.sitenav a{display:inline-block;padding:4px 12px;border-radius:99px;background:#fff;color:var(--malbec);text-decoration:none;font-size:.85rem;font-weight:700;box-shadow:0 4px 14px #5b1a3a14}
+section[id]{scroll-margin-top:12px}
 footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 </style></head><body>
 <header class="hero">
@@ -61,8 +64,18 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <p class="credit">Foto: <a href="https://commons.wikimedia.org/wiki/File:Vineyard_in_Mendoza,_Argentina.jpg">David</a> · vinhedo no Vale do Uco, Mendoza · redimensionada · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
 </header>
 <main>
+<nav class="sitenav" aria-label="Seções">
+<a href="#voos">Voos</a>
+<a href="#roteiro">Roteiro</a>
+<a href="#clima">Clima</a>
+<a href="#levar">O que levar</a>
+<a href="#dicas">Dicas</a>
+<a href="#onde-comer">Onde comer</a>
+<a href="#documentos">Documentos</a>
+<a href="#quiz">Quiz</a>
+</nav>
 
-<section><h2>✈️ Voos (todos juntos!)</h2>
+<section id="voos"><h2>✈️ Voos (todos juntos!)</h2>
 <div class="card blue"><div class="date">Qua 21/10 · LATAM LA8168</div>
 <div class="flight"><div><div class="t">12:15</div>GRU São Paulo</div><div class="arrow">——✈——</div><div style="text-align:right"><div class="t">16:15</div>MDZ Mendoza</div></div></div>
 <div class="card blue"><div class="date">Ter 27/10 · LATAM LA8020</div>
@@ -71,7 +84,7 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <div class="card wine">🏨 <b>JS & esposa:</b> Diplomatic Hotel — Av. Belgrano 1041, Mendoza · <a href="https://maps.google.com/?q=Diplomatic+Hotel+Av.+Belgrano+1041+Mendoza" target="_blank" rel="noopener">ver no mapa</a></div>
 </section>
 
-<section><h2>🗓️ Roteiro dia a dia</h2><div class="tl">
+<section id="roteiro"><h2>🗓️ Roteiro dia a dia</h2><div class="tl">
 
 <div class="card day"><span class="date">Qua 21/10</span><h3>🛬 Chegada & check-in</h3>
 <p>Pouso às 16:15 no aeroporto El Plumerillo, traslado para a cidade e check-in. À noite: primeiro brinde de Malbec para inaugurar a viagem! 🥂</p>
@@ -110,7 +123,7 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <p>Check-out, últimas compras de vinho (cuidado com o limite da bagagem!) e voo LA8020 às 13:00. Cheguem cedo ao aeroporto. 🍾</p></div>
 </div></section>
 
-<section><h2>🌤️ Clima no fim de outubro</h2>
+<section id="clima"><h2>🌤️ Clima no fim de outubro</h2>
 <div class="grid">
 <div class="card">☀️ <b>Máx. ~23 °C</b><br>Primavera seca e ensolarada</div>
 <div class="card blue">🌙 <b>Mín. ~11 °C</b><br>Noites frescas — leve casaco</div>
@@ -120,7 +133,7 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <p>Pouca chuva, ar muito seco e sol forte. Previsão ao vivo: <a href="https://www.smn.gob.ar/" target="_blank" rel="noopener">SMN Argentina</a> · <a href="https://www.windy.com/-32.890/-68.845" target="_blank" rel="noopener">Windy</a> · estado da estrada: <a href="https://www.argentina.gob.ar/seguridad/pasosinternacionales/detalle/ruta/29/Sistema-Cristo-Redentor" target="_blank" rel="noopener">Paso Cristo Redentor</a></p>
 <p class="note">Médias históricas de outubro (climate-data.org / weatherapi). Confira a previsão na semana da viagem.</p></section>
 
-<section><h2>🧳 O que levar (marque aí!)</h2>
+<section id="levar"><h2>🧳 O que levar (marque aí!)</h2>
 <div class="card wine"><ul class="check" id="chk">
 <li><label><input type="checkbox">🛂 Passaporte ou RG (emitido há menos de 10 anos)</label></li>
 <li><label><input type="checkbox">🧥 Roupas em camadas</label></li>
@@ -133,10 +146,28 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <li><label><input type="checkbox">🛡️ Seguro viagem</label></li>
 </ul></div></section>
 
-<section><h2>💡 Dicas práticas</h2>
-<div class="card">🏥 <b>Seguro saúde é recomendado.</b></div>
+<section id="dicas"><h2>💡 Dicas práticas</h2>
+<div class="card">🏥 <b>Seguro saúde:</b> JS e Ana María estão cobertos (MasterAssist, Mastercard Black / AIG). <a href="#documentos">Telefones e documentos</a>.</div>
 <div class="card">📶 <b>Internet:</b> chip local, eSIM ou roaming do seu plano.</div>
 <div class="card">😴 <b>Siesta:</b> muito comércio fecha no meio da tarde e reabre no fim do dia.</div>
+</section>
+
+<section id="documentos"><h2>📄 Documentos</h2>
+<p>Seguro viagem MasterAssist (Mastercard Black), garantido pela AIG. Os PDFs estão como emitidos.</p>
+<div class="card wine">
+<p><b>Vigência</b>, igual no certificado e no bilhete de JS e de Ana María: <b>13/10/2026 a 13/10/2027</b>.</p>
+<p>Cada viagem fica coberta por até 60 dias consecutivos a partir da primeira data de embarque.</p>
+<p class="note">Bilhete JS 16023-0003-69-260139064 · Bilhete Ana María 16023-0003-69-260139065.</p>
+</div>
+<div class="card">
+<p><b>Na Argentina</b> (bilhete, linha Argentina): ligação local gratuita <a href="tel:08004445220">0800-444-5220</a>. A cobrar: <a href="tel:+16367228882">1-636-722-8882</a>.</p>
+<p><b>Assistência médica de emergência</b> (certificado; a Argentina não entra na lista de ligações gratuitas): a cobrar para os EUA <a href="tel:+16367227111">+1-636-722-7111</a> (português).</p>
+<p><b>Abrir uma ocorrência</b> (bilhete): a cobrar para os EUA <a href="tel:+16367228881">1-636-722-8881</a> (português).</p>
+</div>
+<div class="grid">
+<div class="card"><b>JS</b><br><a href="docs/seguro-JS-certificado.pdf" download="seguro-JS-certificado.pdf">Certificado MasterAssist</a><br><a href="docs/seguro-JS-bilhete.pdf" download="seguro-JS-bilhete.pdf">Bilhete de Seguro</a></div>
+<div class="card blue"><b>Ana María</b><br><a href="docs/seguro-AnaMaria-certificado.pdf" download="seguro-AnaMaria-certificado.pdf">Certificado</a><br><a href="docs/seguro-AnaMaria-bilhete.pdf" download="seguro-AnaMaria-bilhete.pdf">Bilhete</a></div>
+</div>
 </section>
 
 <section id="onde-comer"><h2>🍽️ Onde comer?</h2>
@@ -183,7 +214,7 @@ footer{text-align:center;padding:30px 16px;background:var(--malbec);color:#fff}
 <p class="note">Votos compartilhados num documento público do MantleDB (sem conta e sem senha). Quem souber o endereço pode ler ou alterar. Se o serviço cair, o aviso acima muda e o voto fica só neste aparelho.</p>
 </section>
 
-<section><h2>🍷 Quiz do Malbec</h2><div class="card wine q" id="quiz"></div></section>
+<section id="quiz"><h2>🍷 Quiz do Malbec</h2><div class="card wine q" id="quiz"></div></section>
 </main>
 <footer>Feito com 🍷 para JS, esposa, Carmem e Wilson · ¡Salud!</footer>
 <script>
